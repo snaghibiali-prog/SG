@@ -1,4 +1,4 @@
-import { NavLink, Outlet } from 'react-router-dom';
+import { NavLink, Outlet, useNavigate } from 'react-router-dom';
 import { useRole } from '../state/RoleContext';
 
 const adminLinks = [
@@ -29,6 +29,12 @@ function NavItem({ to, label }) {
 export default function Layout() {
   const { role, setRole, companyId, setCompanyId, companies } = useRole();
   const links = role === 'admin' ? adminLinks : companyLinks;
+  const navigate = useNavigate();
+
+  function handleRoleChange(newRole) {
+    setRole(newRole);
+    navigate(newRole === 'admin' ? '/admin/companies' : '/app/dashboard');
+  }
 
   return (
     <div className="min-h-screen">
@@ -43,7 +49,7 @@ export default function Layout() {
           <div className="flex items-center gap-2">
             <select
               value={role}
-              onChange={(e) => setRole(e.target.value)}
+              onChange={(e) => handleRoleChange(e.target.value)}
               className="rounded border border-slate-300 bg-white px-2 py-1 text-sm"
             >
               <option value="admin">Main Admin</option>
