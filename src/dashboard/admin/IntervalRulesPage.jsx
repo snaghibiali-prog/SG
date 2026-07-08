@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { listIntervalRules, createIntervalRule } from '../../lib/api';
-import { PageHeader, Card, Field, Input, Button, Table } from '../../components/ui';
+import { listIntervalRules, createIntervalRule } from '../lib/api';
+import { PageHeader, Card, Field, Input, Button, Table } from '../ui';
 
 export default function IntervalRulesPage() {
   const [rules, setRules] = useState(listIntervalRules());

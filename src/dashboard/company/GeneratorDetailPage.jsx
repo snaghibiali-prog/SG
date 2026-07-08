@@ -8,10 +8,10 @@ import {
   addPartChange,
   listInspections,
   listPartChanges,
-} from '../../lib/api';
-import { getPartStatuses } from '../../lib/maintenanceStatus';
-import { PageHeader, Card, Field, Input, Button, Table } from '../../components/ui';
-import StatusBadge from '../../components/StatusBadge';
+} from '../lib/api';
+import { getPartStatuses } from '../lib/maintenanceStatus';
+import { PageHeader, Card, Field, Input, Button, Table } from '../ui';
+import StatusBadge from '../StatusBadge';
 
 const TABS = ['Overview', 'Log Inspection', 'Log Part Change', 'History'];
 
@@ -27,7 +27,7 @@ export default function GeneratorDetailPage() {
     return (
       <div>
         <p className="text-slate-500">Generator not found.</p>
-        <Link to="/app/dashboard" className="text-sm underline">
+        <Link to="/dashboard/app/dashboard" className="text-sm underline">
           Back to dashboard
         </Link>
       </div>
@@ -43,7 +43,7 @@ export default function GeneratorDetailPage() {
       <PageHeader
         title={`${generator.brand} ${generator.model} — ${generator.serial}`}
         actions={
-          <Link to="/app/dashboard" className="text-sm font-medium text-slate-600 underline">
+          <Link to="/dashboard/app/dashboard" className="text-sm font-medium text-slate-600 underline">
             Back to dashboard
           </Link>
         }

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { listCompanies, listTemplates, onboardGenerator } from '../../lib/api';
-import { PageHeader, Card, Field, Input, Select, Button } from '../../components/ui';
+import { listCompanies, listTemplates, onboardGenerator } from '../lib/api';
+import { PageHeader, Card, Field, Input, Select, Button } from '../ui';
 
 export default function OnboardGeneratorPage() {
   const navigate = useNavigate();
@@ -26,7 +26,7 @@ export default function OnboardGeneratorPage() {
   function handleSubmit(e) {
     e.preventDefault();
     onboardGenerator(form);
-    navigate('/admin/generators');
+    navigate('/dashboard/admin/generators');
   }
 
   return (

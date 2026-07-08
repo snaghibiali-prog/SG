@@ -1,4 +1,4 @@
-import { STATUS } from '../lib/maintenanceStatus';
+import { STATUS } from './lib/maintenanceStatus';
 
 const STYLES = {
   [STATUS.OK]: 'bg-emerald-100 text-emerald-800 border-emerald-300',

@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
-import { listGenerators, listCompanies } from '../../lib/api';
-import { getGeneratorStatus } from '../../lib/maintenanceStatus';
-import { PageHeader, Table, Button } from '../../components/ui';
-import StatusBadge from '../../components/StatusBadge';
+import { listGenerators, listCompanies } from '../lib/api';
+import { getGeneratorStatus } from '../lib/maintenanceStatus';
+import { PageHeader, Table, Button } from '../ui';
+import StatusBadge from '../StatusBadge';
 
 export default function GeneratorsPage() {
   const generators = listGenerators();
@@ -14,7 +14,7 @@ export default function GeneratorsPage() {
       <PageHeader
         title="Generators"
         actions={
-          <Link to="/admin/generators/onboard">
+          <Link to="onboard">
             <Button>Onboard New Generator</Button>
           </Link>
         }

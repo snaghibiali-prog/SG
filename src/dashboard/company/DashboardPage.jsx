@@ -1,10 +1,10 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useRole } from '../../state/RoleContext';
-import { listGeneratorsByCompany } from '../../lib/api';
-import { getGeneratorStatus, STATUS } from '../../lib/maintenanceStatus';
-import { PageHeader, Card, Select, Table } from '../../components/ui';
-import StatusBadge from '../../components/StatusBadge';
+import { useRole } from '../state/RoleContext';
+import { listGeneratorsByCompany } from '../lib/api';
+import { getGeneratorStatus, STATUS } from '../lib/maintenanceStatus';
+import { PageHeader, Card, Select, Table } from '../ui';
+import StatusBadge from '../StatusBadge';
 
 export default function DashboardPage() {
   const { companyId } = useRole();
@@ -79,7 +79,7 @@ export default function DashboardPage() {
               <StatusBadge status={g.status} />
             </td>
             <td className="px-3 py-2">
-              <Link to={`/app/generators/${g.id}`} className="text-sm font-medium text-slate-700 underline hover:text-slate-900">
+              <Link to={`/dashboard/app/generators/${g.id}`} className="text-sm font-medium text-slate-700 underline hover:text-slate-900">
                 View
               </Link>
             </td>

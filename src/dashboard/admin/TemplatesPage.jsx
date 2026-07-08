@@ -1,6 +1,6 @@
 import { Fragment, useState } from 'react';
-import { listTemplates, createTemplate } from '../../lib/api';
-import { PageHeader, Card, Field, Input, Select, Button, Table } from '../../components/ui';
+import { listTemplates, createTemplate } from '../lib/api';
+import { PageHeader, Card, Field, Input, Select, Button, Table } from '../ui';
 
 const FIELD_TYPES = ['number', 'text'];
 

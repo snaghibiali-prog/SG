@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { listCompanies, createCompany } from '../../lib/api';
-import { PageHeader, Card, Button, Field, Input, Table } from '../../components/ui';
+import { listCompanies, createCompany } from '../lib/api';
+import { PageHeader, Card, Button, Field, Input, Table } from '../ui';
 
 export default function CompaniesPage() {
   const [companies, setCompanies] = useState(listCompanies());

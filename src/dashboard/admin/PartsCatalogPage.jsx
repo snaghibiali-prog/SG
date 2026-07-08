@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
-import { listPartsCatalog, createPartsCatalogEntry } from '../../lib/api';
-import { PageHeader, Card, Field, Input, Select, Button, Table } from '../../components/ui';
+import { listPartsCatalog, createPartsCatalogEntry } from '../lib/api';
+import { PageHeader, Card, Field, Input, Select, Button, Table } from '../ui';
 
 export default function PartsCatalogPage() {
   const [parts, setParts] = useState(listPartsCatalog());
