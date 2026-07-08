@@ -6,7 +6,7 @@ export default function FinalCTASection() {
       <div className="max-w-4xl mx-auto px-6 md:px-12 text-center">
         <h2 className="text-4xl md:text-5xl font-black tracking-tight leading-tight mb-6">
           <span className="block">Genprima is available</span>
-          <span className="block">for deployment now.</span>
+          <span className="block">for deployment now</span>
         </h2>
         <p className="text-base text-gp-muted leading-relaxed max-w-2xl mx-auto mb-10">
           Contact us to arrange a demonstration of the platform against your equipment configuration and

@@ -1,6 +1,7 @@
 import PageHero from '../components/ui/PageHero';
 import Card from '../components/ui/Card';
 import Button from '../components/ui/Button';
+import BulletList from '../components/ui/BulletList';
 
 const PROVIDED = [
   'Exclusive territorial rights — no competing Genprima channel in the country',
@@ -40,13 +41,13 @@ export default function Distribution() {
   return (
     <>
       <PageHero
-        headline="Exclusive Country Distribution."
+        headline="Exclusive Country Distribution"
         subheadline="Genprima operates a single-distributor model for international markets. One organisation is appointed as the exclusive distributor for each country. Applications are assessed against defined criteria and agreements are structured as formal exclusive distribution contracts."
       />
 
       <section className="bg-gp-dark py-24 md:py-32">
         <div className="max-w-4xl mx-auto px-6 md:px-12">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">How Distribution Works.</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-6">How Distribution Works</h2>
           <p className="text-base text-gp-muted leading-relaxed mb-4">
             Genprima sells directly to operators in markets where no distributor agreement is in place. When a
             distributor is appointed for a country, they become the sole licensed channel for that market.
@@ -63,7 +64,7 @@ export default function Distribution() {
 
       <section className="bg-gp-black py-24 md:py-32">
         <div className="max-w-4xl mx-auto px-6 md:px-12">
-          <h2 className="text-2xl md:text-3xl font-bold mb-8">What Is Provided.</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-8">What Is Provided</h2>
           <Card>
             <ul className="flex flex-col gap-4">
               {PROVIDED.map((item) => (
@@ -78,29 +79,15 @@ export default function Distribution() {
 
       <section className="bg-gp-dark py-24 md:py-32">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
-          <h2 className="text-2xl md:text-3xl font-bold mb-12">Who Should Apply.</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-12">Who Should Apply</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <p className="text-xs font-bold uppercase tracking-widest text-gp-accent mb-4">Suitable Applicants</p>
-              <ul className="flex flex-col gap-3">
-                {SUITABLE_APPLICANTS.map((item) => (
-                  <li key={item} className="flex gap-3 text-sm text-gp-text">
-                    <span className="text-gp-accent">—</span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
+              <BulletList items={SUITABLE_APPLICANTS} />
             </div>
             <div>
               <p className="text-xs font-bold uppercase tracking-widest text-gp-accent mb-4">Minimum Criteria</p>
-              <ul className="flex flex-col gap-3">
-                {MINIMUM_CRITERIA.map((item) => (
-                  <li key={item} className="flex gap-3 text-sm text-gp-text">
-                    <span className="text-gp-accent">—</span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
+              <BulletList items={MINIMUM_CRITERIA} />
             </div>
           </div>
         </div>
@@ -108,7 +95,7 @@ export default function Distribution() {
 
       <section className="bg-gp-black py-24 md:py-32">
         <div className="max-w-4xl mx-auto px-6 md:px-12">
-          <h2 className="text-2xl md:text-3xl font-bold mb-8">Application Process.</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-8">Application Process</h2>
           <Card className="mb-10">
             <ol className="flex flex-col gap-4">
               {APPLICATION_PROCESS.map((step, i) => (

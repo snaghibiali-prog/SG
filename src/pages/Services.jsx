@@ -44,14 +44,14 @@ export default function Services() {
   return (
     <>
       <PageHero
-        headline="Services."
+        headline="Services"
         subheadline="Genprima provides two categories of service beyond the core platform: parts procurement, which is integrated into the platform workflow, and technical advisory, which is offered as a separate engagement for operators with specific project or operational requirements."
       />
 
       <section id="parts-procurement" className="bg-gp-dark py-24 md:py-32">
         <div className="max-w-4xl mx-auto px-6 md:px-12">
           <SectionLabel>Parts Procurement</SectionLabel>
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">Component Sourcing at End-of-Cycle.</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-6">Component Sourcing at End-of-Cycle</h2>
           <p className="text-base text-gp-muted leading-relaxed mb-4">
             The Genprima platform identifies when components are approaching their replacement interval based on
             operating hours and manufacturer specifications. At that point, the operator can request that
@@ -97,7 +97,7 @@ export default function Services() {
         <div className="max-w-4xl mx-auto px-6 md:px-12">
           <SectionLabel>Technical Advisory</SectionLabel>
           <h2 className="text-2xl md:text-3xl font-bold mb-6">
-            Structured Engagements for Specific Operational Requirements.
+            Structured Engagements for Specific Operational Requirements
           </h2>
           <p className="text-base text-gp-muted leading-relaxed mb-10">
             Advisory services are offered as separate paid engagements, scoped and priced individually. They are

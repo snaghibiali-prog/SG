@@ -6,7 +6,7 @@ export default function PlatformIntroSection() {
       <div className="max-w-4xl mx-auto px-6 md:px-12">
         <SectionLabel>Genprima</SectionLabel>
         <h2 className="text-4xl md:text-5xl font-black tracking-tight leading-tight">
-          A Maintenance Management Platform Built Specifically for CHP and Genset Operations.
+          A Maintenance Management Platform Built Specifically for CHP and Genset Operations
         </h2>
         <p className="text-base text-gp-muted leading-relaxed mt-8">
           Genprima connects to your live equipment data, tracks operating hours in real time, and maps them

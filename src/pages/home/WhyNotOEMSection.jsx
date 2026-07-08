@@ -16,7 +16,7 @@ export default function WhyNotOEMSection() {
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <SectionLabel>On OEM Platforms</SectionLabel>
         <h2 className="text-2xl md:text-3xl font-bold max-w-4xl">
-          Manufacturer Software Is Designed to Serve the Manufacturer.
+          Manufacturer Software Is Designed to Serve the Manufacturer
         </h2>
         <p className="text-base text-gp-muted leading-relaxed max-w-3xl mt-6">
           OEM-provided maintenance platforms are built within the OEM's service infrastructure. They are

@@ -16,13 +16,13 @@ export default function Platform() {
   return (
     <>
       <PageHero
-        headline="The Platform."
+        headline="The Platform"
         subheadline="A maintenance management system built specifically for CAT and Jenbacher CHP and genset equipment. Not adapted from a generic template. Designed from the operational requirements of this equipment category."
       />
 
       <section className="bg-gp-dark py-24 md:py-32">
         <div className="max-w-4xl mx-auto px-6 md:px-12">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">Operational Scope.</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-6">Operational Scope</h2>
           <p className="text-base text-gp-muted leading-relaxed mb-4">
             Genprima manages three core functions for every generator under its administration: maintenance
             interval tracking, service event logging, and parts change recording. These three functions are
@@ -39,7 +39,7 @@ export default function Platform() {
 
       <section className="bg-gp-black py-24 md:py-32">
         <div className="max-w-4xl mx-auto px-6 md:px-12">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">How Interval Tracking Works.</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-6">How Interval Tracking Works</h2>
           <p className="text-base text-gp-muted leading-relaxed mb-4">
             Each generator is configured with a set of service intervals on onboarding. Intervals are defined in
             operating hours and correspond to the manufacturer's published maintenance schedule for that specific
@@ -60,7 +60,7 @@ export default function Platform() {
 
       <section className="bg-gp-dark py-24 md:py-32">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
-          <h2 className="text-2xl md:text-3xl font-bold mb-12">Two Operational Roles.</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-12">Two Operational Roles</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-gp-border">
             <div className="bg-gp-card p-8">
               <h3 className="font-bold text-lg mb-3">Platform Administrator</h3>
@@ -87,7 +87,7 @@ export default function Platform() {
       <section className="bg-gp-black py-24 md:py-32">
         <div className="max-w-4xl mx-auto px-6 md:px-12">
           <SectionLabel>Data Inputs</SectionLabel>
-          <h2 className="text-2xl md:text-3xl font-bold mb-8">How Data Enters the Platform.</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-8">How Data Enters the Platform</h2>
           <Card>
             <ul className="flex flex-col gap-4">
               {DATA_INPUTS.map((item) => (

@@ -32,7 +32,7 @@ export default function FeaturesSection() {
     <section className="bg-gp-dark py-24 md:py-32">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <SectionLabel>Platform Capabilities</SectionLabel>
-        <h2 className="text-2xl md:text-3xl font-bold mb-12">Core Functions.</h2>
+        <h2 className="text-2xl md:text-3xl font-bold mb-12">Core Functions</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-gp-border">
           {FEATURES.map((feature, i) => (

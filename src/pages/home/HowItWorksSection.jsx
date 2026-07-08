@@ -26,7 +26,7 @@ export default function HowItWorksSection() {
     <section className="bg-gp-black py-24 md:py-32">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <SectionLabel>How the Platform Operates</SectionLabel>
-        <h2 className="text-2xl md:text-3xl font-bold mb-12">Three Operational Phases.</h2>
+        <h2 className="text-2xl md:text-3xl font-bold mb-12">Three Operational Phases</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 md:divide-x md:divide-gp-border">
           {STEPS.map((step) => (

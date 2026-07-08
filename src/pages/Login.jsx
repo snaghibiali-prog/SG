@@ -31,7 +31,7 @@ export default function Login() {
           <img src="/logo.svg" alt="Genprima" className="h-6" />
         </Link>
         <p className="text-xs font-bold uppercase tracking-widest text-gp-accent mb-2">Platform Login</p>
-        <h1 className="text-2xl font-bold mb-8">Sign in to your dashboard.</h1>
+        <h1 className="text-2xl font-bold mb-8">Sign in to your dashboard</h1>
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-6">
           <div>

@@ -1,6 +1,7 @@
 import PageHero from '../components/ui/PageHero';
 import Divider from '../components/ui/Divider';
 import Button from '../components/ui/Button';
+import BulletList from '../components/ui/BulletList';
 
 const CAT_ITEMS = [
   'Model-specific service interval templates',
@@ -20,7 +21,7 @@ export default function Equipment() {
   return (
     <>
       <PageHero
-        headline="Supported Equipment."
+        headline="Supported Equipment"
         subheadline="Genprima is configured for CAT and INNIO Jenbacher CHP and genset equipment. Maintenance templates, inspection parameter sets, and parts catalogue structures are built specifically for these two equipment families — not adapted from a generic framework."
       />
 
@@ -38,14 +39,7 @@ export default function Equipment() {
             Operators using Genprima for CAT equipment can record part replacements against the correct component
             reference for their specific model.
           </p>
-          <ul className="flex flex-col gap-3">
-            {CAT_ITEMS.map((item) => (
-              <li key={item} className="flex gap-3 text-sm text-gp-text">
-                <span className="text-gp-accent">—</span>
-                {item}
-              </li>
-            ))}
-          </ul>
+          <BulletList items={CAT_ITEMS} />
         </div>
       </section>
 
@@ -70,14 +64,7 @@ export default function Equipment() {
             This separation ensures that operators running mixed fleets are not working from a
             lowest-common-denominator template.
           </p>
-          <ul className="flex flex-col gap-3">
-            {JENBACHER_ITEMS.map((item) => (
-              <li key={item} className="flex gap-3 text-sm text-gp-text">
-                <span className="text-gp-accent">—</span>
-                {item}
-              </li>
-            ))}
-          </ul>
+          <BulletList items={JENBACHER_ITEMS} />
         </div>
       </section>
 
@@ -85,7 +72,7 @@ export default function Equipment() {
 
       <section className="bg-gp-dark py-24 md:py-32">
         <div className="max-w-4xl mx-auto px-6 md:px-12 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">Other Equipment.</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">Other Equipment</h2>
           <p className="text-base text-gp-muted leading-relaxed mb-8">
             Support for additional CHP and genset equipment brands is under development. Operators running
             equipment not currently listed should contact Genprima directly. Configuration for additional brands

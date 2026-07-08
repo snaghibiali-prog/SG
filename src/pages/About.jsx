@@ -11,11 +11,11 @@ const PRINCIPLES = [
 export default function About() {
   return (
     <>
-      <PageHero headline="About Genprima." />
+      <PageHero headline="About Genprima" />
 
       <section className="bg-gp-dark py-24 md:py-32">
         <div className="max-w-4xl mx-auto px-6 md:px-12">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">The Gap This Platform Was Built to Close.</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-6">The Gap This Platform Was Built to Close</h2>
           <p className="text-base text-gp-muted leading-relaxed mb-4">
             Independent CHP plant and genset operators occupy a specific position in the energy sector. They own
             and operate generating equipment — often CAT or Jenbacher units — without the maintenance engineering
@@ -39,7 +39,7 @@ export default function About() {
 
       <section className="bg-gp-black py-24 md:py-32">
         <div className="max-w-4xl mx-auto px-6 md:px-12">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">A Software Company.</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-6">A Software Company</h2>
           <p className="text-base text-gp-muted leading-relaxed mb-4">
             Genprima is a software business. The platform is the product. Advisory services and parts
             procurement exist to support operators whose requirements go beyond what software alone can address —
@@ -55,7 +55,7 @@ export default function About() {
 
       <section className="bg-gp-dark py-24 md:py-32">
         <div className="max-w-4xl mx-auto px-6 md:px-12">
-          <h2 className="text-2xl md:text-3xl font-bold mb-8">Operating Principles.</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-8">Operating Principles</h2>
           <Card>
             <ul className="flex flex-col gap-4">
               {PRINCIPLES.map((item) => (

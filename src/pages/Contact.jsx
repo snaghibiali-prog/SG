@@ -65,7 +65,7 @@ export default function Contact() {
   return (
     <>
       <PageHero
-        headline="Contact Genprima."
+        headline="Contact Genprima"
         subheadline="Use the form below to submit a demo request, platform enquiry, procurement question, advisory enquiry, or distribution application. All submissions are reviewed and responded to within two business days."
       />
 

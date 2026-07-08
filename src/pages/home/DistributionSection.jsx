@@ -1,5 +1,6 @@
 import SectionLabel from '../../components/ui/SectionLabel';
 import Button from '../../components/ui/Button';
+import BulletList from '../../components/ui/BulletList';
 
 const TERMS = [
   'Exclusive territorial rights — one distributor per country',
@@ -14,7 +15,7 @@ export default function DistributionSection() {
     <section className="bg-gp-dark py-24 md:py-32">
       <div className="max-w-4xl mx-auto px-6 md:px-12">
         <SectionLabel>Distribution Partners</SectionLabel>
-        <h2 className="text-2xl md:text-3xl font-bold mb-6">Exclusive Country Distribution.</h2>
+        <h2 className="text-2xl md:text-3xl font-bold mb-6">Exclusive Country Distribution</h2>
         <p className="text-base text-gp-muted leading-relaxed mb-4">
           Genprima is available for deployment across international markets through an exclusive
           single-country distributor model. One distributor is appointed per country. The appointed distributor
@@ -27,14 +28,7 @@ export default function DistributionSection() {
           development.
         </p>
 
-        <ul className="flex flex-col gap-3 mb-10">
-          {TERMS.map((term) => (
-            <li key={term} className="flex gap-3 text-sm text-gp-text">
-              <span className="text-gp-accent">—</span>
-              {term}
-            </li>
-          ))}
-        </ul>
+        <BulletList items={TERMS} className="mb-10" />
 
         <Button to="/distribution" variant="primary">
           Enquire About Distribution Rights

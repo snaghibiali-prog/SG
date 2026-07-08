@@ -33,7 +33,7 @@ export default function ProblemSection() {
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <SectionLabel>The Operational Reality</SectionLabel>
         <h2 className="text-2xl md:text-3xl font-bold max-w-4xl">
-          Independent Operators Carry Risk That Larger Organisations Distribute Across Departments.
+          Independent Operators Carry Risk That Larger Organisations Distribute Across Departments
         </h2>
         <p className="text-base text-gp-muted leading-relaxed max-w-3xl mt-6">
           When you own or operate CHP plant or genset equipment without a dedicated maintenance engineering
